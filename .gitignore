@@ -1,0 +1,13 @@
+# Build e artefatos gerados pelo ESP-IDF (regenerados automaticamente)
+build/
+managed_components/
+sdkconfig.old
+
+# Documentacao interna (specs, planos, relatorios) - nao vai pro repo do grupo
+docs/
+
+# Qualquer markdown solto (README interno, notas, etc)
+*.md
+
+# Arquivos de IDE/editor
+.vscode/

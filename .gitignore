@@ -1,6 +1,7 @@
 # Build e artefatos gerados pelo ESP-IDF (regenerados automaticamente)
 build/
 managed_components/
+sdkconfig
 sdkconfig.old
 
 # Documentacao interna (specs, planos, relatorios) - nao vai pro repo do grupo

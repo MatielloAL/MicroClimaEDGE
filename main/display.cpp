@@ -36,7 +36,7 @@ static void tela_status(const SensorData &s, const ActuatorState &a) {
   display.setCursor(0, 20);
   display.printf("Bomba:  %s\n", a.bomba_on ? "ON" : "OFF");
   display.setCursor(0, 40);
-  display.printf("Chuva:  %s\n", s.chuva ? "SIM" : "NAO");
+  display.printf("Solo:   %.0f%% %s\n", s.umidade_solo_pct, s.solo_seco ? "(seco)" : "");
   display.display();
 }
 

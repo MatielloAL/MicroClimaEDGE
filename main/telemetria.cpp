@@ -80,9 +80,10 @@ static void publicar_telemetria(const SensorData &s, const ActuatorState &a) {
   char payload[256];
   snprintf(payload, sizeof(payload),
     "{\"temp_int\":%.2f,\"pressao_int\":%.2f,\"temp_ext\":%.2f,\"pressao_ext\":%.2f,"
-    "\"chuva\":%s,\"cooler_on\":%s,\"bomba_on\":%s}",
+    "\"umidade_solo_pct\":%.1f,\"solo_seco\":%s,\"cooler_on\":%s,\"bomba_on\":%s}",
     s.temp_int, s.pressao_int, s.temp_ext, s.pressao_ext,
-    s.chuva ? "true" : "false",
+    s.umidade_solo_pct,
+    s.solo_seco ? "true" : "false",
     a.cooler_on ? "true" : "false",
     a.bomba_on ? "true" : "false");
   g_mqtt.publish("v1/devices/me/telemetry", payload);

@@ -8,7 +8,6 @@ struct ActuatorState {
   bool bomba_manual_override;
   bool bomba_manual_valor;
   unsigned long bomba_manual_timestamp_ms; // quando o override foi setado (p/ expirar sozinho)
-  bool buzzer_on;
 };
 
 extern ActuatorState g_atuadores;

@@ -9,7 +9,9 @@ struct SensorData {
   float temp_ext;
   float pressao_ext;
   bool bmp_ext_ok;
-  bool chuva;
+  int umidade_solo_raw;   // leitura bruta do ADC (0-4095), maior = mais seco
+  float umidade_solo_pct; // aproximacao 0-100%, calibrar apos teste de bancada
+  bool solo_seco;         // true se abaixo do limiar (precisa regar)
 };
 
 extern SensorData g_sensores;

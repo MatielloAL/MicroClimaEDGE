@@ -1,8 +1,9 @@
 /* ==========================================================
    MicroClima EDGE - Firmware de producao
-   Sistema continuo de controle de estufa: le sensores, decide
-   cooler/bomba (simulados), aciona alarme de chuva, mostra no
-   OLED e publica telemetria no ThingsBoard via MQTT.
+   Sistema continuo de controle de estufa: le sensores (BMP280 x2 +
+   umidade de solo), aciona cooler/bomba via rele real, sinaliza
+   status no LED RGB, mostra no OLED e publica telemetria no
+   ThingsBoard via MQTT.
    O controle local nunca depende de Wi-Fi/MQTT.
    ========================================================== */
 

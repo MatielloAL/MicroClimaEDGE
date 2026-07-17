@@ -124,3 +124,7 @@ idf.py -p <porta_serial> flash monitor
 - Marcelo de Araújo Lopes (211062179)
 - Leonardo Barcellos (231039113)
 - Guilherme de Sá Gonçalves (211031056)
+
+## Link para o vídeo
+
+https://www.youtube.com/watch?v=HntRURmBQN8

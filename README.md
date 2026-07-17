@@ -1,5 +1,7 @@
 # MicroClima EDGE
 
+> **Trabalho 2** — repositório do grupo: https://github.com/oyLeonardo/MicroClimaEDGE
+
 Firmware para ESP32 (ESP-IDF puro) que monitora o microclima de uma estufa/vaso
 e controla automaticamente uma bomba d'água e um cooler, com telemetria em
 tempo real para o ThingsBoard via MQTT.
@@ -115,3 +117,10 @@ idf.py -p <porta_serial> flash monitor
 - Tornar os limiares de cooler, bomba e solo configuráveis via ThingsBoard
   (atributos compartilhados), em vez de constantes fixas no firmware.
 - Recalibração periódica/adaptativa do sensor de umidade do solo.
+
+## Integrantes
+
+- Pedro Henrique F. Nunes (200026151)
+- Marcelo de Araújo Lopes (211062179)
+- Leonardo Barcellos (231039113)
+- Guilherme de Sá Gonçalves (211031056)

@@ -9,6 +9,7 @@ docs/
 
 # Qualquer markdown solto (README interno, notas, etc)
 *.md
+!README.md
 
 # Arquivos de IDE/editor
 .vscode/
